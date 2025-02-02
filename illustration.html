@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+		<script src=
+		"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+		</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ari Ganahl</title>
+</head>
+<body>
+    <!--Navigation bar-->
+    <nav>
+        <a href="index.html"><img src="https://www.guardianoffshore.com.au/wp-content/uploads/2015/03/banner-placeholder.jpg" height= "100"></a>
+        <ul class="nav__links">
+            <li style="padding-top:30px;">
+                <a id="active-page" href="#">Illustration</a>
+                <a href="./comics.html">Comics & Books</a>
+                <a href="./laser.html">Laser</a>
+                <a href="./shop.html">Shop</a>
+                <a href="./about.html">About</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--Carousel (GLIDE.JS: https://glidejs.com/docs/)-->
+<div style=" display: flex; justify-content: center; align-items: center;">
+    <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide"><a href="https://images.unsplash.com/photo-1588186941799-f9a4fc54ff1e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHdvbWVuJTIwc2hvcHBpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=1200&h=1200&q=80" class="glightbox img-box" data-glightbox="type: image" data-title="My title"
+              data-description="description here">
+                <img src="https://images.unsplash.com/photo-1588186941799-f9a4fc54ff1e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHdvbWVuJTIwc2hvcHBpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=900&h=900&q=80" alt="image" />
+              </a></li>
+            <li class="glide__slide"><img src="https://www.pixblank.com/public/assets/images/sample/275x360.png"></li>
+            <li class="glide__slide"><img src="https://www.pixblank.com/public/assets/images/sample/275x360.png"></li>
+            <li class="glide__slide"><img src="https://www.pixblank.com/public/assets/images/sample/275x360.png"></li>
+            <li class="glide__slide"><img src="https://www.pixblank.com/public/assets/images/sample/275x360.png"></li>
+            <li class="glide__slide"><img src="https://www.pixblank.com/public/assets/images/sample/275x360.png"></li>
+            <li class="glide__slide"><img src="https://www.pixblank.com/public/assets/images/sample/275x360.png"></li>
+            <li class="glide__slide"><img src="https://www.pixblank.com/public/assets/images/sample/275x360.png"></li>
+
+          </ul>
+        </div>
+            <div class="glide__arrows" data-glide-el="controls">
+              <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path d="M8.3685 12L13.1162 3.03212L14.8838 3.9679L10.6315 12L14.8838 20.0321L13.1162 20.9679L8.3685 12Z"></path>
+                </svg>
+              </button>
+              <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path d="M15.6315 12L10.8838 3.03212L9.11622 3.9679L13.3685 12L9.11622 20.0321L10.8838 20.9679L15.6315 12Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+    </div>
+
+    <!--Lightbox-->
+            <div class="masonry-container">
+                <a href="https://images.unsplash.com/photo-1588186941799-f9a4fc54ff1e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHdvbWVuJTIwc2hvcHBpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=1200&h=1200&q=80" class="glightbox img-box" data-glightbox="type: image" data-title="My title"
+                data-description="description here">
+                  <img src="https://images.unsplash.com/photo-1588186941799-f9a4fc54ff1e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHdvbWVuJTIwc2hvcHBpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=900&h=900&q=80" alt="image" />
+                </a>
+                <a href="https://images.unsplash.com/photo-1593409981958-562665d407cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDF8fHdvbWVuJTIwc2hvcHBpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=1200&h=1200&q=80" class="glightbox img-box" data-glightbox="type: image">
+                  <img src="https://images.unsplash.com/photo-1593409981958-562665d407cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDF8fHdvbWVuJTIwc2hvcHBpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=900&h=900&q=60" alt="image" />
+                </a>
+                <a href="https://images.unsplash.com/photo-1587538639284-aec1076ba9c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTB8fHdvbWVuJTIwc2hvcHBpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=1200&h=1200&q=80" class="glightbox img-box" data-glightbox="type: image">
+                  <img src="https://images.unsplash.com/photo-1587538639284-aec1076ba9c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTB8fHdvbWVuJTIwc2hvcHBpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=900&h=900&q=60" alt="image" />
+                </a>
+        </div>
+
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="./scripts.js"></script>
+</body>
+</html>
