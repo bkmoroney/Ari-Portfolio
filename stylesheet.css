@@ -17,6 +17,17 @@
     padding: 0;
 }
 
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.visible {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease;
+}
+
 body {
     margin: 0 auto;
     min-height: 100vh;
@@ -62,7 +73,7 @@ nav {
 
 .topnav ul {
     list-style: none;
-    float: right;
+    /* float: right; */
 }
 
 .topnav ul li {
@@ -70,7 +81,7 @@ nav {
 }
 
 .topnav ul li a {
-    transition: all 0.3s ease 0s;
+    transition: color 0.3s ease 0s;
     padding: 0 20px;
     text-decoration: none;
     color: black;
@@ -85,10 +96,11 @@ nav {
     text-decoration: underline;
 }
 
-.topnav .open-icon,
-.topnav .close-icon {
+.open-icon,
+.close-icon {
     display: none;
 }
+
 
 /*Global Flex Containers*/
 
@@ -122,7 +134,7 @@ nav {
     width: 100%;
 }
 
-.align-self-stretch{
+.align-self-stretch {
     align-self: stretch!important;
 }
 
@@ -272,7 +284,7 @@ footer {
     display: block;
     top: 50%;
     z-index: 2;
-    color: white;
+    color: black!important;
     text-transform: uppercase;
     padding: 0!important;
     background-color: rgba(255 255, 255, 0.5)!important;
@@ -329,85 +341,85 @@ footer {
     color: white!important;
 }
 
+
 /*Transitions*/
+
 .fade-in {
-	opacity: 1;
-	animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: .3s;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: .3s;
 }
 
 @keyframes fadeInOpacity {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .fade-out {
-	opacity: 1;
-	animation-name: fadeOutOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: .3s;
+    opacity: 1;
+    animation-name: fadeOutOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: .3s;
 }
 
 @keyframes fadeOutOpacity {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
+
 
 /*Mobile*/
 
 @media (max-width: 1000px) {
-    .topnav ul,
-    .topnav.responsive #header {
-        display: none;
-        transition: all 0.3s ease 0s;
-
-    }
-    .topnav a.open-icon {
+    .open-icon {
         float: right;
         display: block;
     }
-    .topnav.responsive ul{
+    .topnav {
+        height: 0%;
+        width: 100%;
         position: fixed;
-        background: black;
         z-index: 999;
-        height: 100vh;
-        width: 100vw;
-        padding: 20% 0;
-        opacity: 1;
-        animation-name: fadeInOpacity;
-        animation-iteration-count: 1;
-        animation-timing-function: ease-in;
-        animation-duration: .3s;
+        top: 0;
+        left: 0;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow-y: hidden;
+        transition: 0.5s;
     }
-    
-    @keyframes fadeInOpacity {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
+    .topnav ul {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
     }
-    
-    .topnav.responsive ul,
-    .topnav.responsive .close-icon {
-        float: none;
+    .topnav ul {
         display: block;
         text-align: center;
         margin: auto;
+        font-size: 30px;
     }
-    .topnav.responsive ul li a {
+    .close-icon {
+        display: block;
+        font-size: 30px;
+        /* position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px; */
+    }
+    .topnav ul li a {
         display: block;
         margin: 20px;
         color: white;
