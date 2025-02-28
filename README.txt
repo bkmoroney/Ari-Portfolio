@@ -1,4 +1,6 @@
 Image Sizes: These are all very flexible, but here is a list of the current sizes and a few recommendations.
+
+**For any images you want to have enlargment on, you will need to make a second file at a larger resolution that opens when the image is clicked.
 --------------------------------------------------------------------------------------------------------------
 Home Page (Index):
     Header
