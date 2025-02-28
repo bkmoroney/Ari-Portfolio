@@ -3,21 +3,32 @@
 
 <head>
     <link rel="stylesheet" href="stylesheet.css">
+    <!--Lightbox-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+
+    <!--Carousel-->
     <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
     <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ari Ganahl</title>
+
+    <!--Favicon-->
     <link rel="icon" type="image/x-icon" href="https://placecats.com/32/32">
 </head>
 
-<body>
+<body id="body" onload="loaded()">
     <!--Navigation bar-->
-    <div style="display: flex; flex-direction: row-reverse; justify-content: space-between;">
+    <div class="nav-container">
         <nav id="topNav" class="topnav">
             <ul>
                 <a href="javascript:void(0);" class="close-icon icon" onclick="closeNav()">
@@ -37,6 +48,7 @@
         </a>
         <a id="header" href="index.html"><img src="https://www.guardianoffshore.com.au/wp-content/uploads/2015/03/banner-placeholder.jpg" height="100"></a>
     </div>
+
     <h1 class="text-center">Illustration</h1>
     <div class="spacer-50"></div>
 
@@ -45,6 +57,16 @@
         <div class="glide">
             <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
+                    <li class="glide__slide">
+                        <a href="https://placecats.com/600/800" class="glightbox img-box" data-glightbox="type: image">
+                            <img src="https://placecats.com/300/400" alt="image" />
+                        </a>
+                    </li>
+                    <li class="glide__slide">
+                        <a href="https://placecats.com/600/800" class="glightbox img-box" data-glightbox="type: image">
+                            <img src="https://placecats.com/300/400" alt="image" />
+                        </a>
+                    </li>
                     <li class="glide__slide">
                         <a href="https://placecats.com/600/800" class="glightbox img-box" data-glightbox="type: image">
                             <img src="https://placecats.com/300/400" alt="image" />
@@ -183,32 +205,8 @@
         </div>
     </div>
 
-
-    <!--3 Column Lightbox Masonry Gallery-->
-    <!-- <div class="masonry-container">
-    <a href="https://placecats.com/600/700" class="glightbox img-box" data-glightbox="type: image" data-title="My title" data-description="description here">
-      <img src="https://placecats.com/600/700" alt="image" />
-    </a>
-    <a href="https://placecats.com/600/500" class="glightbox img-box" data-glightbox="type: image">
-      <img src="https://placecats.com/600/500" alt="image" />
-    </a>
-    <a href="https://placecats.com/600/300" class="glightbox img-box" data-glightbox="type: image">
-      <img src="https://placecats.com/600/300" alt="image" />
-    </a>
-    <a href="https://placecats.com/600/500" class="glightbox img-box" data-glightbox="type: image">
-      <img src="https://placecats.com/600/500" alt="image" />
-    </a>
-    <a href="https://placecats.com/600/300" class="glightbox img-box" data-glightbox="type: image">
-      <img src="https://placecats.com/600/300" alt="image" />
-    </a>
-    <a href="https://placecats.com/600/700" class="glightbox img-box" data-glightbox="type: image">
-      <img src="https://placecats.com/600/700" alt="image" />
-    </a>-->
-    <!--To add an item, copy an <a> tag-->
-    <!-- </div> -->
-
     <!--Footer-->
-    <footer style="height: 10vh; display: flex; justify-content: center; align-items: center;">
+    <footer>
         <div class="socials-container">
             <a href="">
                 <img src="https://i.pinimg.com/564x/e0/fc/a0/e0fca0dd47becbf0dbf7152dcb15c1b4.jpg">

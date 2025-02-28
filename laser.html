@@ -1,59 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="stylesheet.css">
+    <!--Lightbox-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
-		<script src=
-		"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-		</script>
+
+    <!--Carousel-->
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ari Ganahl</title>
+
+    <!--Favicon-->
     <link rel="icon" type="image/x-icon" href="https://placecats.com/32/32">
 </head>
-<body>
-    <!--Navigation bar-->
-    <nav id="topNav" class="topnav">
-        <a id="header" href="index.html"><img
-            src="https://www.guardianoffshore.com.au/wp-content/uploads/2015/03/banner-placeholder.jpg" height="100"></a>
-            <a href="javascript:void(0);" class="close-icon icon" onclick="showNav()">
-              <i class="ri-close-large-line" style="color: white;"></i>
-            </a>
-            <ul>
-          <li style="padding-top:30px;">
-            <a id="active-page" href="#">Illustration</a>
-            <a href="./comics.html">Comics & Books</a>
-            <a href="./laser.html">Laser</a>
-            <a href="./shop.html">Shop</a>
-            <a href="./about.html">About</a>
-          </li>
-        </ul>
-        <a href="javascript:void(0);" class="open-icon icon" onclick="showNav()">
-          <i class="ri-menu-line" style="color: black;"></i>
-        </a>
-      </nav>
 
-            <!--Footer-->
-            <footer style="height: 10vh; display: flex; justify-content: center; align-items: center;">
-                <div class="socials-container">
-                    <a href="">
-                        <img src="https://i.pinimg.com/564x/e0/fc/a0/e0fca0dd47becbf0dbf7152dcb15c1b4.jpg">
-                    </a>
-                </div>
-                <div class="socials-container">
-                    <a href="">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Bluesky_Logo.svg/1200px-Bluesky_Logo.svg.png">
-                    </a>
-                </div>
-                <div class="socials-container">
-                    <a href="">
-                        <img src="https://1000logos.net/wp-content/uploads/2017/06/Emblem-Tumblr.jpg">
-                    </a>
-                </div>
-            </footer>
-            
+<body id="body" onload="loaded()">
+    <!--Navigation bar-->
+    <div class="nav-container">
+        <nav id="topNav" class="topnav">
+            <ul>
+                <a href="javascript:void(0);" class="close-icon icon" onclick="closeNav()">
+                    <i class="ri-close-large-line" style="color: white;"></i>
+                </a>
+                <li style="padding-top:30px;">
+                    <a href="./illustration.html">Illustration</a>
+                    <a href="./comics.html">Comics & Books</a>
+                    <a id="active-page" href="#">Laser</a>
+                    <a href="./shop.html">Shop</a>
+                    <a href="./about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="javascript:void(0);" class="open-icon icon" onclick="openNav()">
+            <i class="ri-menu-line" style="color: black;"></i>
+        </a>
+        <a id="header" href="index.html"><img src="https://www.guardianoffshore.com.au/wp-content/uploads/2015/03/banner-placeholder.jpg" height="100"></a>
+    </div>
+
+    <h1 class="text-center">Laser Cutting</h1>
+    <div class="spacer-50"></div>
+    <p style="text-align: center; margin-bottom: 30px;">We can copy and paste the rows from the illustration page. This column layout is just another option for you, but it is annoying trying to get the bottom edge clean.</p>
+    <!--Carousel (GLIDE.JS: https://glidejs.com/docs/)-->
+    <div class="fade-in" style=" display: flex; justify-content: center; align-items: center;">
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide">
+                        <a href="https://placecats.com/600/800" class="glightbox img-box" data-glightbox="type: image">
+                            <img src="https://placecats.com/300/400" alt="image" />
+                        </a>
+                    </li>
+                    <li class="glide__slide">
+                        <a href="https://placecats.com/600/800" class="glightbox img-box" data-glightbox="type: image">
+                            <img src="https://placecats.com/300/400" alt="image" />
+                        </a>
+                    </li>
+                    <li class="glide__slide">
+                        <a href="https://placecats.com/600/800" class="glightbox img-box" data-glightbox="type: image">
+                            <img src="https://placecats.com/300/400" alt="image" />
+                        </a>
+                    </li>
+                    <li class="glide__slide">
+                        <a href="https://placecats.com/600/800" class="glightbox img-box" data-glightbox="type: image">
+                            <img src="https://placecats.com/300/400" alt="image" />
+                        </a>
+                    </li>
+                    <li class="glide__slide">
+                        <a href="https://placecats.com/600/800" class="glightbox img-box" data-glightbox="type: image">
+                            <img src="https://placecats.com/300/400" alt="image" />
+                        </a>
+                    </li>
+                    <li class="glide__slide">
+                        <a href="https://placecats.com/600/800" class="glightbox img-box" data-glightbox="type: image">
+                            <img src="https://placecats.com/300/400" alt="image" />
+                        </a>
+                    </li>
+                    <li class="glide__slide">
+                        <a href="https://placecats.com/600/800" class="glightbox img-box" data-glightbox="type: image">
+                            <img src="https://placecats.com/300/400" alt="image" />
+                        </a>
+                    </li>
+                    <li class="glide__slide">
+                        <a href="https://placecats.com/600/800" class="glightbox img-box" data-glightbox="type: image">
+                            <img src="https://placecats.com/300/400" alt="image" />
+                        </a>
+                    </li>
+                    <li class="glide__slide">
+                        <a href="https://placecats.com/600/800" class="glightbox img-box" data-glightbox="type: image">
+                            <img src="https://placecats.com/300/400" alt="image" />
+                        </a>
+                    </li>
+                    <!--To add more slides, copy and paste a <li> element-->
+                </ul>
+            </div>
+
+            <!--Carousel Controls-->
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                  <i class="ri-arrow-left-s-fill"></i>
+                      </button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                  <i class="ri-arrow-right-s-fill"></i>
+      </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="spacer-50"></div>
+    <!--3 Column Lightbox Masonry Gallery-->
+    <div class="masonry-container">
+        <a href="https://placecats.com/600/700" class="glightbox img-box" data-glightbox="type: image" data-title="My title" data-description="description here">
+            <img src="https://placecats.com/600/700" alt="image" />
+        </a>
+        <a href="https://placecats.com/600/500" class="glightbox img-box" data-glightbox="type: image">
+            <img src="https://placecats.com/600/500" alt="image" />
+        </a>
+        <a href="https://placecats.com/600/300" class="glightbox img-box" data-glightbox="type: image">
+            <img src="https://placecats.com/600/300" alt="image" />
+        </a>
+        <a href="https://placecats.com/600/500" class="glightbox img-box" data-glightbox="type: image">
+            <img src="https://placecats.com/600/500" alt="image" />
+        </a>
+        <a href="https://placecats.com/600/300" class="glightbox img-box" data-glightbox="type: image">
+            <img src="https://placecats.com/600/300" alt="image" />
+        </a>
+        <a href="https://placecats.com/600/700" class="glightbox img-box" data-glightbox="type: image">
+            <img src="https://placecats.com/600/700" alt="image" />
+        </a>
+        <!--To add an item, copy an <a> tag-->
+    </div>
+
+    <!--Footer-->
+    <footer style="height: 10vh; display: flex; justify-content: center; align-items: center;">
+        <div class="socials-container">
+            <a href="">
+                <img src="https://i.pinimg.com/564x/e0/fc/a0/e0fca0dd47becbf0dbf7152dcb15c1b4.jpg">
+            </a>
+        </div>
+        <div class="socials-container">
+            <a href="">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Bluesky_Logo.svg/1200px-Bluesky_Logo.svg.png">
+            </a>
+        </div>
+        <div class="socials-container">
+            <a href="">
+                <img src="https://1000logos.net/wp-content/uploads/2017/06/Emblem-Tumblr.jpg">
+            </a>
+        </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
     <script src="https://unpkg.com/@glidejs/glide@3.7.1/dist/glide.min.js"></script>
     <script src="./scripts.js"></script>
 </body>
+
 </html>

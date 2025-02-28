@@ -3,23 +3,43 @@
 
 <head>
     <link rel="stylesheet" href="stylesheet.css">
+    <!--Lightbox-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+    <!--Carousel-->
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ari Ganahl</title>
+
+    <!--Favicon-->
     <link rel="icon" type="image/x-icon" href="https://placecats.com/32/32">
 </head>
 
-<body>
+<body id="body" onload="loaded()">
     <!--Header-->
-    <div class="flex-col-center">
+    <div style="display: flex; flex-direction: column; justify-content: center; width: 100%;">
         <img src="https://placecats.com/800/150" style="margin:auto;">
     </div>
 
-    <div class="flex-col-center">
+    <div class="flex-col-center" style="margin: auto;">
+        <p style="text-align: center;">Bart is just a hover animation example lmao. He is the illustration page link for now</p>
+
         <!--Row-->
         <div class="flex-row-center padding-top-bottom-20">
-            <a href="illustration.html" class="home-CTAs">
-                <h2>Illustration</h2>
+            <a href="illustration.html" class="home-CTAs" style="background-color: white;">
+                <img class="static" src="https://lh4.googleusercontent.com/-gZiu96oTuu4/Uag5oWLQHfI/AAAAAAAABSE/pl1W8n91hH0/w140-h165-no/Homer-Static.png">
+                <img class="active" src="https://lh4.googleusercontent.com/i1RprwcvxhbN2TAMunNxS4RiNVT0DvlD9FNQCvPFuJ0=w140-h165-no">
             </a>
             <a href="comics.html" class="home-CTAs">
                 <h2>Comics & Books</h2>
@@ -41,7 +61,7 @@
     </div>
 
     <!--Footer-->
-    <footer style="height: 10vh; display: flex; justify-content: center; align-items: center;">
+    <footer style="margin: 0;">
         <div class="socials-container">
             <a href="">
                 <img src="https://i.pinimg.com/564x/e0/fc/a0/e0fca0dd47becbf0dbf7152dcb15c1b4.jpg">
@@ -58,6 +78,9 @@
             </a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="https://unpkg.com/@glidejs/glide@3.7.1/dist/glide.min.js"></script>
+    <script src="./scripts.js"></script>
 </body>
 
 </html>

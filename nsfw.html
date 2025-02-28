@@ -1,39 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="stylesheet.css">
+    <!--Lightbox-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
-		<script src=
-		"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-		</script>
+
+    <!--Carousel-->
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ari Ganahl</title>
+
+    <!--Favicon-->
     <link rel="icon" type="image/x-icon" href="https://placecats.com/32/32">
 </head>
-<body>
-    <!--Navigation bar-->
-    <nav id="topNav" class="topnav">
-        <a id="header" href="index.html"><img
-            src="https://www.guardianoffshore.com.au/wp-content/uploads/2015/03/banner-placeholder.jpg" height="100"></a>
-            <a href="javascript:void(0);" class="close-icon icon" onclick="showNav()">
-              <i class="ri-close-large-line" style="color: white;"></i>
-            </a>
-            <ul>
-          <li style="padding-top:30px;">
-            <a id="active-page" href="#">Illustration</a>
-            <a href="./comics.html">Comics & Books</a>
-            <a href="./laser.html">Laser</a>
-            <a href="./shop.html">Shop</a>
-            <a href="./about.html">About</a>
-          </li>
-        </ul>
-        <a href="javascript:void(0);" class="open-icon icon" onclick="showNav()">
-          <i class="ri-menu-line" style="color: black;"></i>
-        </a>
-      </nav>
 
-    
+<body id="body" onload="loaded()">
+    <!--Navigation bar-->
+    <div class="nav-container">
+        <nav id="topNav" class="topnav">
+            <ul>
+                <a href="javascript:void(0);" class="close-icon icon" onclick="closeNav()">
+                    <i class="ri-close-large-line" style="color: white;"></i>
+                </a>
+                <li style="padding-top:30px;">
+                    <a href="./illustration.html">Illustration</a>
+                    <a href="./comics.html">Comics & Books</a>
+                    <a href="./laser.html">Laser</a>
+                    <a href="./shop.html">Shop</a>
+                    <a href="./about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="javascript:void(0);" class="open-icon icon" onclick="openNav()">
+            <i class="ri-menu-line" style="color: black;"></i>
+        </a>
+        <a id="header" href="index.html"><img src="https://www.guardianoffshore.com.au/wp-content/uploads/2015/03/banner-placeholder.jpg" height="100"></a>
+    </div>
+
+    <h1 class="text-center">NSFW - 18+ only!</h1>
+    <div class="spacer-50"></div>
+
+    <!--Row 1-->
+    <div class="flex-row-align-top text-center padding-bottom-20">
+        <div class="flex-col-align-top flex-child-20">
+            <a href="nsfw.html"><img style="max-width: 300px;" src="https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM="></a>
+            <h3 style="margin-top: 20px;">Title</h3>
+            <p>Placeholder Text lol</p>
+        </div>
+        <div class="flex-col-align-top flex-child-20">
+            <img style="max-width: 300px;" src="https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=">
+            <h3 style="margin-top: 20px;">Title</h3>
+            <p>Placeholder Text lol</p>
+        </div>
+        <div class="flex-col-align-top flex-child-20">
+            <img style="max-width: 300px;" src="https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=">
+            <h3 style="margin-top: 20px;">Title</h3>
+            <p>Placeholder Text lol</p>
+        </div>
+        <div class="flex-col-align-top flex-child-20">
+            <img style="max-width: 300px;" src="https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=">
+            <h3 style="margin-top: 20px;">Title</h3>
+            <p>Placeholder Text lol</p>
+        </div>
+        <div class="flex-col-align-top flex-child-20">
+            <img style="max-width: 300px;" src="https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=">
+            <h3 style="margin-top: 20px;">Title</h3>
+            <p>Placeholder Text lol</p>
+        </div>
+    </div>
+    <div class="spacer-50"></div>
+
+    <!--2/3 + 1/3 Flex Row-->
+    <div class="flex-row-center padding-bottom-20">
+        <div class="flex-child-50 align-self-stretch">
+            <a href="https://placecats.com/1000/500" class="glightbox gallery-item img-box" data-glightbox="type: image" data-title="My title" data-description="description here">
+                <img src="https://placecats.com/1000/500" alt="image" />
+            </a>
+        </div>
+        <div class="flex-child-50 align-self-stretch">
+            <a href="https://placecats.com/1000/500" class="glightbox gallery-item img-box" data-glightbox="type: image" data-title="My title" data-description="description here">
+                <img src="https://placecats.com/1000/500" alt="image" />
+            </a>
+        </div>
+    </div>
+
+    <!--1/3 + 1/3 + 1/3 Flex Row-->
+    <div class="flex-row-center padding-bottom-20">
+        <div class="flex-child-33 align-self-stretch">
+            <a href="https://placecats.com/640/500" class="glightbox gallery-item img-box" data-glightbox="type: image" data-title="My title" data-description="description here">
+                <img src="https://placecats.com/640/500" alt="image" />
+            </a>
+        </div>
+        <div class="flex-child-33 align-self-stretch">
+            <a href="https://placecats.com/640/500" class="glightbox gallery-item img-box" data-glightbox="type: image" data-title="My title" data-description="description here">
+                <img src="https://placecats.com/640/500" alt="image" />
+            </a>
+        </div>
+        <div class="flex-child-33 align-self-stretch">
+            <a href="https://placecats.com/640/500" class="glightbox gallery-item img-box" data-glightbox="type: image" data-title="My title" data-description="description here">
+                <img src="https://placecats.com/640/500" alt="image" />
+            </a>
+        </div>
+    </div>
+
+    <!--2/3 + 1/3 Flex Row-->
+    <div class="flex-row-center padding-bottom-20">
+        <div class="flex-child-66 align-self-stretch">
+            <a href="https://placecats.com/1266/500" class="glightbox gallery-item img-box" data-glightbox="type: image" data-title="My title" data-description="description here">
+                <img src="https://placecats.com/1266/500" alt="image" />
+            </a>
+        </div>
+        <div class="flex-child-33 align-self-stretch">
+            <a href="https://placecats.com/633/500" class="glightbox gallery-item img-box" data-glightbox="type: image" data-title="My title" data-description="description here">
+                <img src="https://placecats.com/633/500" alt="image" />
+            </a>
+        </div>
+    </div>
+
+
+
     <!--Footer-->
     <footer style="height: 10vh; display: flex; justify-content: center; align-items: center;">
         <div class="socials-container">
@@ -57,4 +154,5 @@
     <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
     <script src="./scripts.js"></script>
 </body>
+
 </html>

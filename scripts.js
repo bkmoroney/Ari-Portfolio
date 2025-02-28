@@ -1,5 +1,7 @@
 //DOM load
-function loaded() {}
+function loaded() {
+    document.getElementById("body").style.opacity = 1;
+}
 
 /*Glide.js Object Settings*/
 const config = {
