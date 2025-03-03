@@ -144,6 +144,12 @@ img {
     width: 100%;
 }
 
+.flex-child {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
 .align-self-stretch {
     align-self: stretch!important;
 }
@@ -183,13 +189,6 @@ img {
     justify-content: center;
 }
 
-.flex-child-20 {
-    flex-basis: 15%;
-    display: flex;
-    /* align-self: center;*/
-    /* justify-content:center; */
-}
-
 .gallery-item {
     display: flex;
 }
@@ -200,11 +199,6 @@ img {
 }
 
 
-/* .flex-align-bottom {
-    justify-self: flex-end;
-} */
-
-
 /*Homepage*/
 
 .home-CTAs {
@@ -212,10 +206,8 @@ img {
     align-items: center;
     justify-content: center;
     background-color: var(--color2);
-    height: 250px;
-    width: 250px;
-    /* padding: 30px; */
-    /* margin: 20px; */
+    height: 225px;
+    width: 225px;
     color: white;
     text-align: center;
     text-decoration: none;
@@ -228,6 +220,14 @@ img {
 
 .static:hover {
     opacity: 0;
+}
+
+
+/*Comics & NSFW*/
+
+.comics-thumbnail {
+    flex-basis: 15%;
+    display: flex;
 }
 
 
@@ -244,31 +244,6 @@ img {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-}
-
-
-/*Masonry*/
-
-.masonry-container {
-    columns: 3;
-    gap: 20px;
-}
-
-.masonry-container-2 {
-    columns: 2;
-    gap: 20px;
-}
-
-.masonry-container a {
-    display: block;
-    break-inside: avoid;
-    margin-bottom: 15px;
-}
-
-.masonry-container a img {
-    width: 100%;
-    height: 100%;
-    margin: 0.1rem;
 }
 
 
@@ -408,10 +383,6 @@ footer {
     .close-icon {
         display: block;
         font-size: 30px;
-        /* position: absolute;
-        top: 20px;
-        right: 45px;
-        font-size: 60px; */
     }
     .topnav ul li a {
         display: block;
@@ -425,7 +396,6 @@ footer {
     .flex-row-center a {
         display: block;
         margin: auto;
-        /* gap: 0; */
     }
     .flex-col-align-top a,
     .flex-col-align-top div,

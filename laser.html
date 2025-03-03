@@ -37,7 +37,7 @@
                 <li style="padding-top:30px;">
                     <a href="./illustration.html">Illustration</a>
                     <a href="./comics.html">Comics & Books</a>
-                    <a id="active-page" href="#">Laser</a>
+                    <a id="active-page" href="./laser.html">Laser</a>
                     <a href="./shop.html">Shop</a>
                     <a href="./about.html">About</a>
                 </li>
@@ -51,7 +51,7 @@
 
     <h1 class="text-center">Laser Cutting</h1>
     <div class="spacer-50"></div>
-    <p style="text-align: center; margin-bottom: 30px;">We can copy and paste the rows from the illustration page. This column layout is just another option for you, but it is annoying trying to get the bottom edge clean.</p>
+
     <!--Carousel (GLIDE.JS: https://glidejs.com/docs/)-->
     <div class="fade-in" style=" display: flex; justify-content: center; align-items: center;">
         <div class="glide">
@@ -110,37 +110,49 @@
             <div class="glide__arrows" data-glide-el="controls">
                 <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
                   <i class="ri-arrow-left-s-fill"></i>
-                      </button>
+                </button>
                 <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
                   <i class="ri-arrow-right-s-fill"></i>
-      </button>
+                </button>
             </div>
         </div>
     </div>
 
     <div class="spacer-50"></div>
-    <!--3 Column Lightbox Masonry Gallery-->
-    <div class="masonry-container">
-        <a href="https://placecats.com/600/700" class="glightbox img-box" data-glightbox="type: image" data-title="My title" data-description="description here">
-            <img src="https://placecats.com/600/700" alt="image" />
-        </a>
-        <a href="https://placecats.com/600/500" class="glightbox img-box" data-glightbox="type: image">
-            <img src="https://placecats.com/600/500" alt="image" />
-        </a>
-        <a href="https://placecats.com/600/300" class="glightbox img-box" data-glightbox="type: image">
-            <img src="https://placecats.com/600/300" alt="image" />
-        </a>
-        <a href="https://placecats.com/600/500" class="glightbox img-box" data-glightbox="type: image">
-            <img src="https://placecats.com/600/500" alt="image" />
-        </a>
-        <a href="https://placecats.com/600/300" class="glightbox img-box" data-glightbox="type: image">
-            <img src="https://placecats.com/600/300" alt="image" />
-        </a>
-        <a href="https://placecats.com/600/700" class="glightbox img-box" data-glightbox="type: image">
-            <img src="https://placecats.com/600/700" alt="image" />
-        </a>
-        <!--To add an item, copy an <a> tag-->
+
+    <!--No Basis Flex Row-->
+    <div class="flex-row-center padding-bottom-20">
+        <div class="flex-child">
+            <a href="https://placecats.com/1000/500" class="glightbox gallery-item img-box" data-glightbox="type: image" data-title="My title" data-description="description here">
+                <img src="https://placecats.com/1000/500" alt="image" />
+            </a>
+        </div>
+        <div class="flex-child">
+            <a href="https://placecats.com/700/500" class="glightbox gallery-item img-box" data-glightbox="type: image" data-title="My title" data-description="description here">
+                <img src="https://placecats.com/700/500" alt="image" />
+            </a>
+        </div>
     </div>
+
+    <!--No Basis Flex Row-->
+    <div class="flex-row-center padding-bottom-20">
+        <div class="flex-child">
+            <a href="https://placecats.com/640/500" class="glightbox gallery-item img-box" data-glightbox="type: image" data-title="My title" data-description="description here">
+                <img src="https://placecats.com/640/500" alt="image" />
+            </a>
+        </div>
+        <div class="flex-child">
+            <a href="https://placecats.com/300/500" class="glightbox gallery-item img-box" data-glightbox="type: image" data-title="My title" data-description="description here">
+                <img src="https://placecats.com/300/500" alt="image" />
+            </a>
+        </div>
+        <div class="flex-child">
+            <a href="https://placecats.com/640/500" class="glightbox gallery-item img-box" data-glightbox="type: image" data-title="My title" data-description="description here">
+                <img src="https://placecats.com/640/500" alt="image" />
+            </a>
+        </div>
+    </div>
+
 
     <!--Footer-->
     <footer style="height: 10vh; display: flex; justify-content: center; align-items: center;">

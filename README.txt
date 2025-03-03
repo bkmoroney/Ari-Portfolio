@@ -10,14 +10,10 @@ Home Page (Index):
         1 for the homepage and 1 for the internal pages, since there needs to be a good amount of empty space
         between it and the navigation on the internal pages.
     CTA Images
-        Width: 250px
-        Height: 250px
+        Width: 225px
+        Height: 225px
 --------------------------------------------------------------------------------------------------------------
 Illustration & Laser Pages:
-
-3 Column Lightbox Masonry Gallery
-    Width: 600px
-    Height: Can vary. To make a clean edge at the bottom, ensure heights in each column add up to the same number.
 
 Flex Rows:
 To calculate what sizes your images should be,
