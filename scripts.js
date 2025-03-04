@@ -22,13 +22,13 @@ const config = {
     }
 }
 
-new Glide('.glide', config).mount()
-
 //glightbox
 const lightbox = GLightbox({
     touchNavigation: true,
     loop: true,
 });
+
+new Glide('.glide', config).mount();
 
 //Mobile Nav Toggle
 function openNav() {
